@@ -1,5 +1,5 @@
 # de_int_fi
-This is the numerical integration program for Fourier type integrals, using double exponential transformation. 
+This is the numerical integration program for Fourier-type integrals, using double exponential transformation. 
 I made this for integrate complex function which has singular point.
 
 ### usage of example code

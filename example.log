@@ -1,0 +1,19 @@
+I    = int_0^inf sin(x)/x dx
+     = 1.57079632679490e+00 ( = pi/2 )
+I_fts= 1.57079632679490e+00, erc = 0, function call 74
+I_ffs= 1.57079632679490e+00, erc = 0, function call 74
+
+I    = int_0^inf cos(x)/(x^2+1) dx
+     = 5.77863674895461e-01 ( = pi/(2*e) )
+I_ftc= 5.77863674895456e-01, erc = 0, function call 73
+I_ffc= 5.77863674895456e-01, erc = 0, function call 74
+
+I    = int_0^inf sin(x)/(x+1+i) dx
+     = Ci(z)*sin(z)+(pi/2-Si(z))*cos(z), z=1+i. Ci(z) : cosine integral function, Si(z) : sine integral function
+     = 4.79410254818214e-01 -2.63993546979857e-01 i 
+I_ffs= 4.79410254818215e-01 -2.63993546979858e-01 i, erc = 0, function call 68
+
+I    = 2/(pi*i) * int_0^inf exp(-(x-i)/sqrt(2))*cos(sqrt(x^2-2*i*x)/sqrt(2))/sqrt(x^2-2*i*x) dx
+     = H_0^(1)(1), H_0^(1)(x) : hankel function 1st-kind order 1
+     = 7.65197686557966e-01 +8.82569642156769e-02 i
+I_ffc= 7.65197686557967e-01 +8.82569642156769e-02 i, erc = 0, function call 61

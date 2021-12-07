@@ -5,7 +5,7 @@ OBJS=example.o de_int_fi.o
 OUT =example.out
 
 $(OUT) : $(OBJS)
-	$(CC) $(LIB) $(OBJS) -o $(OUT)
+	$(CC) $(FLAG) $(OBJS) -o $(OUT) $(LIB)
 
 .c.o :
 	$(CC) $(FLAG) -c $<

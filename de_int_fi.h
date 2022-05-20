@@ -14,13 +14,15 @@ double deintd_ftc(double (*f)(double,void *),void *pa,double a,double omega,doub
 double deintd_ffs(double (*f)(double,void *),void *pa,double a,double omega,double eps,int *erc);
 double deintd_ffc(double (*f)(double,void *),void *pa,double a,double omega,double eps,int *erc);
 /*  
-   deint_fts : integrate over (a,infinity), integrand f(x) * sin(omega x) 
-   deint_ftc : integrate over (a,infinity), integrand f(x) * cos(omega x)
+   deint_fts : integrate over (a,infinity), integrand f(x) * sin(omega x), f(x) is not a oscillation function.
+   deint_ftc : integrate over (a,infinity), integrand f(x) * cos(omega x), f(x) is not a oscillation function.
    
-   deint_ffs : integrate over (a,infinity), integrand f(x) include oscilation part. x>>a f(x) ~ g(x) sin(omega x)
-   deint_ffc : integrate over (a,infinity), integrand f(x) include oscilation part. x>>a f(x) ~ g(x) cos(omega x)
+   deint_ffs : integrate over (a,infinity), integrand f(x) include oscillation part. 
+               x>>a f(x) ~ g(x) sin(omega x), g(x) is not a oscillation function.
+   deint_ffc : integrate over (a,infinity), integrand f(x) include oscillation part. 
+               x>>a f(x) ~ g(x) cos(omega x), g(x) is not a oscillation function.
 
-   -- argument -- 
+   -- arguments -- 
    double (*f)(double,void *) : function pointer of integrand
                                 f(variable of integration, pointer of paramter list casted to void type)
    void *pa                   : pointer of parameter list 
@@ -33,7 +35,7 @@ double deintd_ffc(double (*f)(double,void *),void *pa,double a,double omega,doub
                                 erc =-2 : downward integration terminated by error
 */
 
-// for a integrand which returns complex value
+// for a integrand which returns a complex value
 double complex deintz_ffs(double complex (*f)(double,void *),void *pa,double a,double omega,double eps,int *erc);
 double complex deintz_ffc(double complex (*f)(double,void *),void *pa,double a,double omega,double eps,int *erc);
 

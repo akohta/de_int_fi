@@ -10,9 +10,13 @@ $$ I = \int_a^{\infty} f(x) \cos(\omega x) \\,dx $$
 
 $f(x)$ needs to be analytic within the integral region, and non-oscillating function.
 
-$$ I = \int_a^{\infty} f(x) \\,dx, \\ \\ f(x) {\approx} g(x) \sin(\omega x), \\ \\ x{\gg}a $$
+$$ I = \int_a^{\infty} f(x) \\,dx, $$
 
-$$ I = \int_a^{\infty} f(x) \\,dx, \\ \\ f(x) {\approx} g(x) \cos(\omega x), \\ \\ x{\gg}a $$
+$$\qquad \qquad \qquad f(x) {\approx} g(x) \sin(\omega x), \\ \\ x{\gg}a. $$
+
+$$ I = \int_a^{\infty} f(x) \\,dx, $$
+
+$$\qquad \qquad \qquad f(x) {\approx} g(x) \cos(\omega x), \\ \\ x{\gg}a. $$
 
 $g(x)$ needs to be analytic within the integral region, and non-oscillating function.
 
